@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Colton's Homepage</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("h1").click(function(){
+            $(".main-page").slideToggle();
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a>Colton Kopsa</a></li>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a id="active-link" href="./assignments.html">Assignments</a></li>
+            </ul>
+        </div>
+        <div class="cover-image">
+            <img alt="My LIfe" src="programmer.jpg">
+        </div>
+        <h1>Assignments</h1>
+        <div class="main-page">
+            <h2>Under Construction</h2>
+            <img id="under-construction" src="https://media.giphy.com/media/QTuGOObCdcci4/giphy-downsized.gif" alt="Under Construction"/>
+        </div>
+    </body>
+</html>
