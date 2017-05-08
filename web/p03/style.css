@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+}
+
+.catalog-container {
+    width: 66%;
+    margin: auto;
+}
+
+.item-container a button {
+    margin: auto;
+    border: solid;
+    float: left;
+    margin: 8px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.item-container {
+    width: 300px;
+    margin: auto;
+    border: solid;
+    float: left;
+    margin: 8px;
+}
+
+.item-container h2 {
+    margin-left: 15px;
+}
+
+.item-container p {
+    margin-left: 15px;
+}
+
+.item-container button {
+    margin-left: 15px;
+}
+
+.item-container img {
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+}
