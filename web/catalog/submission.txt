@@ -1,0 +1,28 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://floating-mountain-98466.herokuapp.com/p03/browse.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/coljamkop/cs313/tree/master/web/p03
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+All elements I believe are functioning properly.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+All the required pieces of the assignment are working
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+Learning to do AJAX PHP requests was an interesting hurdle that I'm glad I learned about.
+
+6. List one strength and one limitation of using cookies.
+Cookies let one track user interactions, which is good.
+Although you can track sessions, serious user interaction should use databases and accounts.
+
+7. Please select the category you feel best describes your assignment:
+D - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Although it's not very pretty, it works and I feel I was able to demonstrate the
+minimum requirements. I wanted to work more on it, but it took longer than I had
+supposed to learn how to properly use AJAX to store things in the PHP session.
