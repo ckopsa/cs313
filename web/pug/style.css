@@ -34,6 +34,29 @@ body {
     background-color: #111111;
 }
 
+#search-box {
+    float: right;
+    margin-top: 15px;
+}
+
+#search-button {
+    float: right;
+    margin-top: 15px;
+}
+
+.activity-card {
+    box-shadow: 6px 6px grey;
+    border: solid black 1px;
+    margin: auto;
+    width: 250px;
+    margin: 5px 10px 10px 15px;
+}
+
+.activity-card-title {
+    background-color: grey;
+    width: 100%;
+}
+
 .main-page {
     height: 100%;
     background-color: white;
