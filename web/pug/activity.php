@@ -28,7 +28,7 @@ session_start();
             <div class="enrollment-list">
                 <h3>Who's Going?</h3>
                 <?php
-                echo '<input onclick="joinEvent(' . $_GET['id'] . ')" type="button" value="Join"/>';
+                echo '<input onclick="createEnrollment(' . $_GET['id'] . ')" type="button" value="Join"/>';
                 $statement = $db->prepare("SELECT id, (SELECT username from participant WHERE id = e.userid) as user FROM enrollment e WHERE eventid = " . $_GET['id'] . ";");
                 $statement->execute();
                 // Go through each result

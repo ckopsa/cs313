@@ -11,6 +11,7 @@ session_start();
         <h1>PUG</h1>
         <div class="main-page">
             <h2>Activity Feed</h2>
+            <input style="float: right" onclick="document.location.href='addEvent.php'" type="button" value="Create Event"/>
             <?php
             $statement = $db->prepare("SELECT id, title, (SELECT username from participant WHERE id = e.host) as \"host\", location, eTime, eDate FROM event e;");
             $statement->execute();

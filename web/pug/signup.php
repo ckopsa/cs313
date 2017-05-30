@@ -22,7 +22,7 @@ $_SESSION['form_token'] = $form_token;
             // Go through each result
             ?>
             <div class="login-box">
-                <form onsubmit="signup(
+                <form onsubmit="createUser(
 document.getElementById('username').value,
 document.getElementById('email').value,
 document.getElementById('location').value,

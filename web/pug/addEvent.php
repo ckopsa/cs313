@@ -17,7 +17,7 @@ $_SESSION['form_token'] = $form_token;
         <?php require "navbar.php"; ?>
         <h1>PUG</h1>
         <div class="main-page">
-            <h2>Signup Page</h2>
+            <h2>Create Event</h2>
             <?php
             // Go through each result
             ?>
