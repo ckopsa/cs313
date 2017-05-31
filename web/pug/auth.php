@@ -3,12 +3,11 @@ require "dbConnect.php";
 $db = get_db();
 session_start();
 
-$sth = $db->prepare('SELECT id FROM participant p WHERE email = :email AND password = :password ');
-$sth->bindParam(':password', $_POST['password'], PDO::PARAM_STR);
+$sth = $db->prepare('SELECT id, password FROM participant p WHERE email = :email');
 $sth->bindParam(':email', $_POST['email'], PDO::PARAM_STR);
 $sth->execute();
 $row = $sth->fetch(PDO::FETCH_ASSOC);
-if (isset($row)) {
+if (password_verify($_POST['password'], $row['password'])) {
     $_SESSION['user_id'] = $row['id'];
 }
 ?>
