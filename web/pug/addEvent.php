@@ -22,23 +22,26 @@ $_SESSION['form_token'] = $form_token;
             // Go through each result
             ?>
             <div class="login-box">
-                <form onsubmit="addEvent(
-document.getElementById('title').value,
-document.getElementById('location').value,
-document.getElementById('time').value,
-document.getElementById('date').value,
-)">
-                    <input id ="title" name="title" type="text" placeholder="Event Title" required/>
-                    <br/>
-                    <input id ="location" name="location" type="text" placeholder="Location" required/>
-                    <br/>
-                    <input id ="time" name="time" type="text" placeholder="Time (ex: 12:00 AM)" required/>
-                    <br/>
-                    <input id="date" name="eDate" type="text" placeholder="Date (ex: 2017-5-25)" required/>
-                    <br/>
-                    <input name="" type="submit" value="Create Event"/>
-                </form>
+                <input id="title" name="title" type="text" placeholder="Event Title" />
+                <br/>
+                <input id="location" name="location" type="text" placeholder="Location" />
+                <br/>
+                <input id="time" name="time" type="text" placeholder="Time (ex: 12:00 AM)" />
+                <br/>
+                <input id="date" name="eDate" type="text" placeholder="Date (ex: 2017-5-25)" />
+                <br/>
+                <input onclick="addEvent()" type="button" value="Create Event"/>
             </div>
         </div>
     </body>
+    <script>
+     function addEvent() {
+         createEvent(
+             document.getElementById('title').value,
+             document.getElementById('location').value,
+             document.getElementById('time').value,
+             document.getElementById('date').value,
+             function () {window.location = 'events.php';});
+     }
+    </script>
 </html>

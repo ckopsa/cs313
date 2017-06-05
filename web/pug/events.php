@@ -1,11 +1,11 @@
-<?PHP
+<?php
 require "dbConnect.php";
 $db = get_db();
 session_start();
 ?>
 <!doctype html>
 <html>
-        <?php require "header.php"; ?>
+    <?php require "header.php"; ?>
     <body>
         <?php require "navbar.php"; ?>
         <h1>PUG</h1>

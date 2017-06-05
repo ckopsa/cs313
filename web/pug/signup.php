@@ -22,26 +22,30 @@ $_SESSION['form_token'] = $form_token;
             // Go through each result
             ?>
             <div class="login-box">
-                <form onsubmit="createUser(
-document.getElementById('username').value,
-document.getElementById('email').value,
-document.getElementById('location').value,
-document.getElementById('password').value,
-document.getElementById('passwordConfirm').value
-)">
-                    <input id ="username" name="username" type="text" placeholder="Username" required/>
-                    <br/>
-                    <input id ="email" name="email" type="text" placeholder="Email" required/>
-                    <br/>
-                    <input id ="location" name="location" type="text" placeholder="Location" required/>
-                    <br/>
-                    <input id="password" name="password" type="password" placeholder="Password" required/>
-                    <br/>
-                    <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Password Confirm" required/>
-                    <br/>
-                    <input name="" type="submit" value="Create Account"/>
-                </form>
+                <input id ="username" name="username" type="text" placeholder="Username" required/>
+                <br/>
+                <input id ="email" name="email" type="text" placeholder="Email" required/>
+                <br/>
+                <input id ="location" name="location" type="text" placeholder="Location" required/>
+                <br/>
+                <input id="password" name="password" type="password" placeholder="Password" required/>
+                <br/>
+                <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Password Confirm" required/>
+                <br/>
+                <input name="" type="button" onclick="signup()" value="Create Account"/>
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+     function signup() {
+         createUser(
+             document.getElementById('username').value,
+             document.getElementById('email').value,
+             document.getElementById('location').value,
+             document.getElementById('password').value,
+             document.getElementById('passwordConfirm').value,
+             window.location = "login.php"
+         );
+     }
+    </script>
 </html>

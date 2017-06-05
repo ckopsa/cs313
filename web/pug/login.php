@@ -22,14 +22,12 @@ $_SESSION['form_token'] = $form_token;
             // Go through each result
             ?>
             <div class="login-box">
-                <form onsubmit="login(document.getElementById('email').value, document.getElementById('password').value)">
-                    <input id ="email" name="email" type="text" placeholder="Email"/>
-                    <br/>
-                    <input id="password" name="password" type="password" placeholder="Password"/>
-                    <br/>
-                    <input name="" type="submit" value="Login"/>
-                    <input name="signup" value="Signup" type="button" onclick="location.href='signup.php'"/>
-                </form>
+                <input id ="email" name="email" type="text" placeholder="Email"/>
+                <br/>
+                <input id="password" name="password" type="password" placeholder="Password"/>
+                <br/>
+                <input name="" onclick="login(document.getElementById('email').value, document.getElementById('password').value)" type="button" value="Login"/>
+                <input name="signup" value="Signup" type="button" onclick="location.href='signup.php'"/>
             </div>
         </div>
     </body>
